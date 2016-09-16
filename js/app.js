@@ -5,9 +5,11 @@
  */
 function Dice(sides) {
 	this.sides = sides;
-	this.roll = function() {
-		return Math.floor(Math.random() * this.sides) + 1;	
-	}
+	this.roll = rollDice;
+}
+
+function rollDice() {
+	return Math.floor(Math.random() * this.sides) + 1;	
 }
 
 // Create new dice instance
