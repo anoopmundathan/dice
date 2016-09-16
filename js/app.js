@@ -5,10 +5,9 @@
  */
 function Dice(sides) {
 	this.sides = sides;
-	this.roll = rollDice;
 }
 
-function rollDice() {
+Dice.prototype.roll = function() {
 	return Math.floor(Math.random() * this.sides) + 1;	
 }
 
